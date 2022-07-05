@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS b2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- BÀI 1 -->
+    <h3 class="m-3">BÀI 1: SO SÁNH 3 SỐ NGUYÊN</h3>
+    <div class="form-group m-5">
+      <p class="alert alert-danger m-1">
+        Nhập vào 3 số nguyên, xuất ra 3 số theo thứ tự tăng dần
+      </p>
+      <p class="m-5 h3">Nhập vào 3 số nguyên:</p>
+      <div class="form-group row m-5">
+        <input id="so1" class="m-1 form-control col-sm" />
+        <input id="so2" class="m-1 form-control col-sm" />
+        <input id="so3" class="m-1 form-control col-sm" />
+      </div>
+      <div class="form-group">
+        <button id="btnBai1" class="m-1 btn btn-success">Sắp xếp</button>
+        <p id="ketQuaBai1" class="m-1 alert alert-success">
+          Thứ tự từ nhỏ đến lớn là:
+        </p>
+      </div>
+    </div>
+<!-- BÀI 2 -->
+<h3 class="m-3">BÀI 2: CHƯƠNG TRÌNH CHÀO HỎI</h3>
+<div class="form-group m-5">
+  <p class="alert alert-danger m-1">
+    Viết chương trình “Chào hỏi” các thành viên trong gia đình với các đặc điểm. Đầu tiên máy sẽ
+hỏi ai sử dụng máy. Sau đó dựa vào câu trả lời và đưa ra lời chào phù hợp. Giả sử trong gia
+đình có 4 thành viên: Bố (B), Mẹ (M), anh Trai (A) và Em gái (E)
+  </p>
+  <p class="m-5 h3">Đứa nào đang xài máy dzẩy?</p>
+  <div class="form-group row m-5 w-50">
+    <form >
+    <input name="a" id="dad" type="radio" value="DAD">
+    <label for="dad">Daddy</label> <br/>
+    <input name="a" id="mom" type="radio" value="MOM">
+    <label for="mom">Mommy</label> <br/> 
+    <input name="a" id="son" type="radio" value="SON">
+    <label for="son">Sonny</label> <br/>
+    <input name="a" id="sis" type="radio" value="SIS">
+    <label for="sis">Sister</label> <br/>
+    <input name="a" id="grandpa" type="radio" value="GRANDPA">
+    <label for="grandpa">Granpa</label> <br/>
+  </form>
+  <br>
+  </div>
+  <div class="form-group">
+    <button id="btnBai2" class="m-1 btn btn-success">Chào cái nà</button>
+    <p id="ketQuaBai2" class="m-1 alert alert-success"> Hola
+    </p>
+  </div>
+</div>
+    <!-- BÀI 3 -->
+    <h3 class="m-3">BÀI 3: XUẤT SỐ CHẴN, LẺ</h3>
+    <div class="form-group m-5">
+      <p class="alert alert-danger m-1">
+        Nhập vào 3 số nguyên, cho ra kết quả có bao nhiêu số chẵn lẻ.
+      </p>
+      <p class="m-5 h3">Nhập vào 3 số nguyên:</p>
+      <div class="form-group row m-5">
+        <input id="soA" class="m-1 form-control col-sm" />
+        <input id="soB" class="m-1 form-control col-sm" />
+        <input id="soC" class="m-1 form-control col-sm" />
+      </div>
+      <div class="form-group">
+        <button id="btnBai3" class="m-1 btn btn-success">Kiểm tra</button>
+        <p id="ketQuaBai3" class="m-1 alert alert-success">
+          Số chẵn lẻ là:
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- BÀI 4 -->
+  <h3 class="m-3">BÀI 4: KIỂM TRA TAM GIÁC ( TAM GIÁC LÀ TÁC GIAM )</h3>
+  <div class="form-group m-5">
+    <p class="alert alert-danger m-1">
+      Nhập vào chiều dài 3 cạnh cùng đơn vị, cho ra kết quả tam giác là tác giam.
+    </p>
+    <p class="m-5 h3">Nhập vào chiều dài 3 cạnh:</p>
+    <div class="form-group row m-5">
+      <input id="canh1" class="m-1 form-control col-sm" />
+      <input id="canh2" class="m-1 form-control col-sm" />
+      <input id="canh3" class="m-1 form-control col-sm" />
+    </div>
+    <div class="form-group">
+      <button id="btnBai4" class="m-1 btn btn-success">Kiểm tra</button>
+      <p id="ketQuaBai4" class="m-1 alert alert-success">
+Tam giác trên là:
+      </p>
+    </div>
+  </div>
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
